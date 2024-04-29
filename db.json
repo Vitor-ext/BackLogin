@@ -1,9 +1,52 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "João da Silva",
+      "email": "joao@silva.com",
+      "senha": "joao"
+    },
+    {
+      "id": 2,
+      "nome": "Maria Salvagni",
+      "email": "maria@salvagni.com",
+      "senha": "maria"
+    },
+    {
+      "id": 3,
+      "nome": "Gabriel Pereira",
+      "email": "gabriel@pereira.com",
+      "senha": "gabriel"
+    },
+    {
+      "id": 4,
+      "nome": "Ana Souza",
+      "email": "ana@souza.com",
+      "senha": "ana"
+    },
+    {
+      "id": 5,
+      "nome": "Carlos Oliveira",
+      "email": "carlos@oliveira.com",
+      "senha": "carlos"
+    },
+    {
+      "id": 6,
+      "nome": "Juliana Costa",
+      "email": "juliana@costa.com",
+      "senha": "juliana"
+    },
+    {
+      "id": 7,
+      "nome": "Pedro Lima",
+      "email": "pedro@lima.com",
+      "senha": "pedro"
+    },
+    {
+      "id": 8,
+      "nome": "Fernanda Santos",
+      "email": "fernanda@santos.com",
+      "senha": "fernanda"
+    }
+  ]
 }
