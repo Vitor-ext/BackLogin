@@ -16,8 +16,16 @@ const router = jsonServer.router('db.json')
 
 const middlewares = jsonServer.defaults()
 
+// Adicionando middleware para permitir CORS
+server.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    next();
+});
+
 server.use(middlewares)
-// Add this before server.use(router)
+// Adicione isso antes de server.use(router)
 server.use(jsonServer.rewriter({
     '/api/*': '/$1',
     '/blog/:resource/:id/show': '/:resource/:id'
@@ -27,5 +35,5 @@ server.listen(3000, () => {
     console.log('JSON Server is running')
 })
 
-// Export the Server API
+// Exportar a API do Servidor
 module.exports = server
